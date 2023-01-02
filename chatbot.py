@@ -50,16 +50,6 @@ def predict_class(sentence):
 
     return return_list
 
-def get_response(intents_list, intents_json):
-    tag = intents_list[0]['intent']
-    list_of_intents = intents_json['intents']
-    for i in list_of_intents:
-        if i['tag'] == tag:
-            result = random.choice(i['responses'])
-            break
-
-    return result
-
 
 print('Go! Chatbot is running!')
 
@@ -75,6 +65,3 @@ while True:
     ints = predict_class(message)
     for intent in ints:
         print(intent)
-
-#     res = get_response(ints,intents)
-#     print(res)
