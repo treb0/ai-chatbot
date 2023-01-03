@@ -50,13 +50,9 @@ def predict_class(sentence):
 
     return return_list
 
+# Main
 
 print('Go! Chatbot is running!')
-
-
-# Chatbot run loop
-
-
 
 while True:
 
