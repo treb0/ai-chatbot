@@ -56,6 +56,9 @@ print('Go! Chatbot is running!')
 
 while True:
 
+    print('------------')
+    print('')
+    print('------------')
     message = input('')
     if message == 'exit': break
     ints = predict_class(message)
